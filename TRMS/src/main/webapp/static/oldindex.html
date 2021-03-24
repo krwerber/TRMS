@@ -1,0 +1,55 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>TRMS Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="toLogin()">Login</button>
+                <button type="button" class="toggle-btn" onclick="toRegister()">Register</button>
+            </div>
+            <form id="login" class="input-group">
+                <input id="user-login" type="text" class="input-field" placeholder="username" required>
+                <input id="pass-login" type="password" class="input-field" placeholder="password" required>
+                <button id="loginBtn" type="submit" class="submit-btn" onclick="login()">Login</button>
+            </form>
+            <form id="register" class="input-group">
+                <input id="firstName" type="text" class="input-field" placeholder="first name" required>
+                <input id="lastName" type="text" class="input-field" placeholder="last name" required>
+                <input id="email" type="email" class="input-field" placeholder="email" required>
+                <select id="department" class="input-menu" required>
+                    <option selected disabled>Select department</option>
+                    <option value="Administration">Administration</option>
+                    <option value="Software Development">Software Development</option>
+                    <option value="Operations">Operations</option>
+                </select>
+                <input id="user-reg" type="text" class="input-field" placeholder="username" required>
+                <input id="pass-reg" type="password" class="input-field" placeholder="password" required>
+                <button type="submit" class="submit-btn" onclick="register()">Register</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        let x = document.getElementById("login");
+        let y = document.getElementById("register");
+        let z = document.getElementById("btn");
+
+        function toRegister(){
+            x.style.left="-400px";
+            y.style.left="50px";
+            z.style.left="110px";
+        }
+
+        function toLogin(){
+            x.style.left="50px";
+            y.style.left="450px";
+            z.style.left="0";
+        }
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>
