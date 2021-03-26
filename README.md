@@ -20,9 +20,14 @@ TODO:<br>
 <ul>
   <li>Implement manager and department head functionality</li>
   <li>Smooth out the interface by ensuring the old page disappears when switching pages</li>
+  <li>Fix connection between profile page and back end</li>
 </ul>
 
 ## Getting started
 Run `git clone https://github.com/krwerber/TRMS.git` in a terminal to clone the repository<br>
 Import the project as a Maven project in prefered IDE<br>
 Launch the project on a Tomcat server, it can be accessed via http://localhost:8080/static<br>
+
+## Usage
+Click register to make an account, you will be automatically logged in.<br>
+Navigate to the 'My Forms' page to submit a form.
